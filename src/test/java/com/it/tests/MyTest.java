@@ -10,6 +10,7 @@ public class MyTest extends BaseTest {
         app.login.login(validUser);
         Assert.assertEquals(app.dashboard.getLbUserEmail(), validUser.email);
 
+
 //        app.dashboard.clickCreateLetterButton();
 //        app.createLetter.create(letterToMyself);
 //
