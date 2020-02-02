@@ -38,6 +38,11 @@ task fireFox(type: Test) {
         suites "src\\test\\resources\\testNG.xml"
     }
 }
+task Chrome(type: Test) {
+    useTestNG {
+        suites "src\\test\\resources\\testNG.xml"
+    }
+}
 task browserstack(type: Test) {
     systemProperty("driver", "browserstack")
     useTestNG {
